@@ -2,7 +2,7 @@
 
 namespace Tests\Fixtures;
 
-use Laravel\Socialite\One\AbstractProvider;
+use Babychakra\Socialite\One\AbstractProvider;
 
 class OAuthOneTestProviderStub extends AbstractProvider
 {

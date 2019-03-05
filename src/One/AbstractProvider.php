@@ -1,13 +1,13 @@
 <?php
 
-namespace Laravel\Socialite\One;
+namespace Babychakra\Socialite\One;
 
 use Illuminate\Http\Request;
 use InvalidArgumentException;
 use League\OAuth1\Client\Server\Server;
 use League\OAuth1\Client\Credentials\TokenCredentials;
 use Symfony\Component\HttpFoundation\RedirectResponse;
-use Laravel\Socialite\Contracts\Provider as ProviderContract;
+use Babychakra\Socialite\Contracts\Provider as ProviderContract;
 
 abstract class AbstractProvider implements ProviderContract
 {
@@ -56,7 +56,7 @@ abstract class AbstractProvider implements ProviderContract
      * Get the User instance for the authenticated user.
      *
      * @throws \InvalidArgumentException
-     * @return \Laravel\Socialite\One\User
+     * @return \Babychakra\Socialite\One\User
      */
     public function user()
     {
@@ -80,7 +80,7 @@ abstract class AbstractProvider implements ProviderContract
      *
      * @param  string  $token
      * @param  string  $secret
-     * @return \Laravel\Socialite\One\User
+     * @return \Babychakra\Socialite\One\User
      */
     public function userFromTokenAndSecret($token, $secret)
     {

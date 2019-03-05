@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Socialite\Two;
+namespace Babychakra\Socialite\Two;
 
 use Illuminate\Support\Arr;
 use GuzzleHttp\ClientInterface;

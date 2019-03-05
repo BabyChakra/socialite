@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Socialite;
+namespace Babychakra\Socialite;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -20,7 +20,7 @@ class SocialiteServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('Laravel\Socialite\Contracts\Factory', function ($app) {
+        $this->app->singleton('Babychakra\Socialite\Contracts\Factory', function ($app) {
             return new SocialiteManager($app);
         });
     }
@@ -32,6 +32,6 @@ class SocialiteServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return ['Laravel\Socialite\Contracts\Factory'];
+        return ['Babychakra\Socialite\Contracts\Factory'];
     }
 }

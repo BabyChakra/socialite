@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Socialite\Contracts;
+namespace Babychakra\Socialite\Contracts;
 
 interface User
 {

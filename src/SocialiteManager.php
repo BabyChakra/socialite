@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravel\Socialite;
+namespace Babychakra\Socialite;
 
 use InvalidArgumentException;
 use Illuminate\Support\Manager;
-use Laravel\Socialite\One\TwitterProvider;
-use Laravel\Socialite\One\BitbucketProvider;
+use Babychakra\Socialite\One\TwitterProvider;
+use Babychakra\Socialite\One\BitbucketProvider;
 use League\OAuth1\Client\Server\Twitter as TwitterServer;
 use League\OAuth1\Client\Server\Bitbucket as BitbucketServer;
 
@@ -25,56 +25,56 @@ class SocialiteManager extends Manager implements Contracts\Factory
     /**
      * Create an instance of the specified driver.
      *
-     * @return \Laravel\Socialite\Two\AbstractProvider
+     * @return \Babychakra\Socialite\Two\AbstractProvider
      */
     protected function createGithubDriver()
     {
         $config = $this->app['config']['services.github'];
 
         return $this->buildProvider(
-            'Laravel\Socialite\Two\GithubProvider', $config
+            'Babychakra\Socialite\Two\GithubProvider', $config
         );
     }
 
     /**
      * Create an instance of the specified driver.
      *
-     * @return \Laravel\Socialite\Two\AbstractProvider
+     * @return \Babychakra\Socialite\Two\AbstractProvider
      */
     protected function createFacebookDriver()
     {
         $config = $this->app['config']['services.facebook'];
 
         return $this->buildProvider(
-            'Laravel\Socialite\Two\FacebookProvider', $config
+            'Babychakra\Socialite\Two\FacebookProvider', $config
         );
     }
 
     /**
      * Create an instance of the specified driver.
      *
-     * @return \Laravel\Socialite\Two\AbstractProvider
+     * @return \Babychakra\Socialite\Two\AbstractProvider
      */
     protected function createGoogleDriver()
     {
         $config = $this->app['config']['services.google'];
 
         return $this->buildProvider(
-            'Laravel\Socialite\Two\GoogleProvider', $config
+            'Babychakra\Socialite\Two\GoogleProvider', $config
         );
     }
 
     /**
      * Create an instance of the specified driver.
      *
-     * @return \Laravel\Socialite\Two\AbstractProvider
+     * @return \Babychakra\Socialite\Two\AbstractProvider
      */
     protected function createLinkedinDriver()
     {
         $config = $this->app['config']['services.linkedin'];
 
         return $this->buildProvider(
-          'Laravel\Socialite\Two\LinkedInProvider', $config
+          'Babychakra\Socialite\Two\LinkedInProvider', $config
         );
     }
 
@@ -83,7 +83,7 @@ class SocialiteManager extends Manager implements Contracts\Factory
      *
      * @param  string  $provider
      * @param  array  $config
-     * @return \Laravel\Socialite\Two\AbstractProvider
+     * @return \Babychakra\Socialite\Two\AbstractProvider
      */
     public function buildProvider($provider, $config)
     {
@@ -96,7 +96,7 @@ class SocialiteManager extends Manager implements Contracts\Factory
     /**
      * Create an instance of the specified driver.
      *
-     * @return \Laravel\Socialite\One\AbstractProvider
+     * @return \Babychakra\Socialite\One\AbstractProvider
      */
     protected function createTwitterDriver()
     {
@@ -110,7 +110,7 @@ class SocialiteManager extends Manager implements Contracts\Factory
     /**
      * Create an instance of the specified driver.
      *
-     * @return \Laravel\Socialite\One\AbstractProvider
+     * @return \Babychakra\Socialite\One\AbstractProvider
      */
     protected function createBitbucketDriver()
     {

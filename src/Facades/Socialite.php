@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravel\Socialite\Facades;
+namespace Babychakra\Socialite\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Laravel\Socialite\SocialiteManager
+ * @see \Babychakra\Socialite\SocialiteManager
  */
 class Socialite extends Facade
 {
@@ -16,6 +16,6 @@ class Socialite extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'Laravel\Socialite\Contracts\Factory';
+        return 'Babychakra\Socialite\Contracts\Factory';
     }
 }

@@ -3,8 +3,8 @@
 namespace Tests\Fixtures;
 
 use Mockery as m;
-use Laravel\Socialite\Two\User;
-use Laravel\Socialite\Two\AbstractProvider;
+use Babychakra\Socialite\Two\User;
+use Babychakra\Socialite\Two\AbstractProvider;
 
 class OAuthTwoTestProviderStub extends AbstractProvider
 {

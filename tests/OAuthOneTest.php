@@ -49,7 +49,7 @@ class OAuthOneTest extends PHPUnit_Framework_TestCase
         $provider = new OAuthOneTestProviderStub($request, $server);
         $user = $provider->user();
 
-        $this->assertInstanceOf('Laravel\Socialite\One\User', $user);
+        $this->assertInstanceOf('Babychakra\Socialite\One\User', $user);
         $this->assertSame('uid', $user->id);
         $this->assertSame('foo@bar.com', $user->email);
         $this->assertSame(['extra' => 'extra'], $user->user);

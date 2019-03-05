@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Socialite\One;
+namespace Babychakra\Socialite\One;
 
 use InvalidArgumentException;
 

@@ -1,12 +1,12 @@
 {
-    "name": "laravel/socialite",
+    "name": "babychakra/socialite",
     "description": "Laravel wrapper around OAuth 1 & OAuth 2 libraries.",
-    "keywords": ["oauth", "laravel"],
+    "keywords": ["oauth", "laravel", "babychakra"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Taylor Otwell",
-            "email": "taylorotwell@gmail.com"
+            "name": "Akash Negi",
+            "email": "akash@babychakra.com"
         }
     ],
     "require": {
@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Laravel\\Socialite\\": "src/"
+            "Babychakra\\Socialite\\": "src/"
         }
     },
     "autoload-dev": {

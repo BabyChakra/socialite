@@ -29,20 +29,20 @@ To get started with Socialite, use Composer to add the package to your project's
 
 ### Configuration
 
-After installing the Socialite library, register the `Laravel\Socialite\SocialiteServiceProvider` in your `config/app.php` configuration file:
+After installing the Socialite library, register the `Babychakra\Socialite\SocialiteServiceProvider` in your `config/app.php` configuration file:
 
 ```php
 'providers' => [
     // Other service providers...
 
-    Laravel\Socialite\SocialiteServiceProvider::class,
+    Babychakra\Socialite\SocialiteServiceProvider::class,
 ],
 ```
 
 Also, add the `Socialite` facade to the `aliases` array in your `app` configuration file:
 
 ```php
-'Socialite' => Laravel\Socialite\Facades\Socialite::class,
+'Socialite' => Babychakra\Socialite\Facades\Socialite::class,
 ```
 
 You will also need to add credentials for the OAuth services your application utilizes. These credentials should be placed in your `config/services.php` configuration file, and should use the key `facebook`, `twitter`, `linkedin`, `google`, `github` or `bitbucket`, depending on the providers your application requires. For example:

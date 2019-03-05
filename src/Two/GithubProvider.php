@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Socialite\Two;
+namespace Babychakra\Socialite\Two;
 
 use Exception;
 use Illuminate\Support\Arr;

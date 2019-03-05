@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Socialite\One;
+namespace Babychakra\Socialite\One;
 
-use Laravel\Socialite\AbstractUser;
+use Babychakra\Socialite\AbstractUser;
 
 class User extends AbstractUser
 {
